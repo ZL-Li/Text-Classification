@@ -10,7 +10,7 @@ For this project, we are given a collection of news articles and also summaries 
 
 A training dataset is a .tsv (tab separated values) file containing a number of articles, with one article per line, and linebreaks within articles removed. Each line of the .tsv file has three fields: instance number, text and topic (business, entertainment, politics, sport, tech). A test dataset is a .tsv file in the same format as the training dataset except that we ignore the topic field. Training and test datasets can be drawn from supplied files articles.tsv or summaries.tsv.
 
-For all models, we consider an article to be a collection of words, where a word is a string of at least two letters, numbers or the symbols #, @, , $ or %, delimited by a space, after removing all other characters (two characters is the default minimum word length for CountVectorizer in scikit-learn). URLs are treated as a space, so delimit words.
+For all models, we consider an article to be a collection of words, where a word is a string of at least two letters, numbers or the symbols #, @, _, $ or %, delimited by a space, after removing all other characters (two characters is the default minimum word length for CountVectorizer in scikit-learn). URLs are treated as a space, so delimit words.
 
 We will use and test four supervised learning methods: Decision Trees (DT), Bernoulli Naive Bayes (BNB), Multinomial Naive Bayes (MNB) and Multiple Layer Perceptron (MLP).
 
